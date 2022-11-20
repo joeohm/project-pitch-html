@@ -1,13 +1,12 @@
- # Final Project Pitch Template
+ # Final Project Pitch
 
-## **Overall idea *- example***
+## **Overall idea **
 
-> We want to create a complex recipe app. Its main purpose is to add, list, save, edit and delete recipes. Users of this application will be able to create their own collections of recipes, edit/delete them via a set of controls. Moreover, there will be the possibility to create your own profile.
+We want to make a birthday reminder app where you can add a person’s date of birth and get a reminder by e-mail in advance of the birthday.
+The registered birthday should include information about the person, and settings for when the reminder should be sent, along with any other information the user wants to see in the reminder such as birthday present info.
 
-As for stretch goals, we want to add the functionality of adding recipes to favourites for a specific user, copying ingredient lists to the clipboard, filtering on different tags and sorting on ingredients, personalized recipe feed dependent on user activity and creating PWA from a web application.
-> 
 
-## **Technological stack - *example***
+## **Technological stack **
 
 ### Frontend
 
@@ -15,91 +14,100 @@ As for stretch goals, we want to add the functionality of adding recipes to favo
 - Redux
 - React Router
 - Styled components
-- [Editext](https://www.npmjs.com/package/react-editext) (for editing your own recipes)
-- Possibly also [Formik](https://formik.org/docs/tutorial) and [React Dnd](https://www.npmjs.com/package/react-dnd) for adding & rearranging ingredients
-- [Cloudinary](https://cloudinary.com) (for recipe images)
+- Material UI
 
 ### Backend
 
 - Node
 - Express
 - MongoDB
-- [TensorFlow.js](https://www.tensorflow.org/js) - for creating a personalized feed
+- Nodemailer
+- CRON scheduler
 
 ### Other
 
+- Gmail SMTP server
 - GitHub - repository
 - Jira/Miro/Figma/Trello - for task management
+- Figma/Trello - for task management
+- JamBoard
+
 
 ## Pages *- example*
 
 - Sign in/sign up
-- Recipe feed
-- Add recipe
-- Single recipe- (show/edit/delete depending if you’re the owner)
-- Profile - (show/add/edit/show favourites)
+- Registered birthdays
+- Add new birthday
+- Detail view for single birthday - (show/edit/delete)
+- (optional) Settings page
+- (optional) Landing page with “coming-up birthdays”
 
-## Roadmap ***- example***
 
-*Note: This is an example. You can have more stages if you want to. The purpose is to get an overview so you don’t start at the wrong end. The MVP should come first.*
+## Roadmap
 
 ### Stage 1
 
 At the end of stage 1 we want to have:
 
-- Backend with functionality for adding recipes, and fetching a collection of recipes and a single recipe
-- Frontend set up with Redux, routing and basic components
-- basic styling basic layout, header, navigation and footer
+- A complete design sketch in Figma
+- This should show what the page looks like in different devices (phone, tablet, desktop, big screen) and all different pages
+- Integrate with SMTP server, and set up CRON job
 
 ### Stage 2
 
 At the end of stage 2 we want to have:
 
-- Backend with functionality to edit and delete a recipe
-- A working form in frontend for adding a new recipe
+- Backend with functionality for adding birthdays
+- Frontend set up with Redux, routing and basic components
+- Basic styling and layout
+- Implement Material UI listview for registered birthdays
+
 
 ### Stage 3
 
 At the end of stage 3 we want to have:
 
 - A working authentication + profile page
-- Single recipe page (with editing rights depending on logged-in owner or not)
-- A well-styled recipe feed
+- Backend with functionality to edit and delete a birthday
+- Hook up CRON job with data from backend, check if there is a birthday reminder for that day and send it out to the user
+- A working form in frontend for adding a new birthday
+- Single birthday page
+
 
 ### Stage 4
 
 In stage 4 we want to tie the knots and:
 
 - Polish the styling and get UX feedback from the community.
-- Implement the functionality to filter by tags and/or ingredients
-- Implement functionality to copy to clipboard
+- Analyse and implement feedback
+
 
 ### Stage 5
 
-- Create a PWA version
-- Add functionality to save favourite recipes to profile
-- Implement feed personalisation
+- Stretch goals
 
-## MVP and Stretch goals - *example*
+## MVP and Stretch goals
 
 ### MVP
 
-- *Recipe feed*
-- *Single recipe (add/edit/delete)*
-- *Profiles*
+- Login
+- Lists all registered birthdays
+- Add new birthday
+- Send e-mail with birthday reminder through SMTP server (Gmail)
+
 
 ### Stretch goals
 
-- *Copy recipe to Clipboard*
-- *Filtering*
-- *Add to favourites*
-- *Personalized feed*
-- *PWA version*
+- Different views for registered birthdays, for example list/cards/calendar
+- Landing page with info about “birthdays coming up” (within 30 days) 
+- Settings page for default birthday reminders, with possibility to override in each specific birthday
+- Advanced settings like ”I don’t know the exact date of birth” which option to specify a range
 
-## **Team members** - *example*
 
-*Jennie Dalgren, Matilda Brunemalm, Daniel Mnich*
+## **Team members**
+
+*Joel Öhman, Nina Berggren, Viktor Svensson*
 
 ## Designs
 
-[Link to wireframes]
+https://jamboard.google.com/d/13BqfrsojkzIkIAyj-z56PwOwxkOAvQLu_TrhRl_Aceo/viewer?f=0
