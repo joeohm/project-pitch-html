@@ -28,7 +28,6 @@ The registered birthday should include information about the person, and setting
 
 - Gmail SMTP server
 - GitHub - repository
-- Jira/Miro/Figma/Trello - for task management
 - Figma/Trello - for task management
 - JamBoard
 
@@ -67,7 +66,7 @@ At the end of stage 2 we want to have:
 
 At the end of stage 3 we want to have:
 
-- A working authentication + profile page
+- A working authentication
 - Backend with functionality to edit and delete a birthday
 - Hook up CRON job with data from backend, check if there is a birthday reminder for that day and send it out to the user
 - A working form in frontend for adding a new birthday
