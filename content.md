@@ -32,7 +32,7 @@ The registered birthday should include information about the person, and setting
 - JamBoard
 
 
-## Pages *- example*
+## Pages
 
 - Sign in/sign up
 - Registered birthdays
