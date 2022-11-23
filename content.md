@@ -57,14 +57,15 @@ At the end of stage 2 we want to have:
 
 - A complete design sketch in Figma
 - This should show what the page looks like in different devices (phone, tablet, desktop, big screen) and all different pages
-- Frontend set up with Redux, routing and basic components
-- Basic styling and layout
-- Implement Material UI listview for registered birthdays
 
 ### Stage 3
 
 At the end of stage 3 we want to have:
 
+- Frontend set up with Redux, routing and basic components
+- Basic styling and layout
+- Unit tests for frontend
+- Implement Material UI listview for registered birthdays
 - A working form in frontend for adding a new birthday
 - Single birthday page
 
